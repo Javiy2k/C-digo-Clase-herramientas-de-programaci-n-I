@@ -1,0 +1,121 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fundamentos_consola_variables
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+            /*EJEMPLO DE MANEJO DE VARIABLES EN LOS PROGRAMAS
+             * Javier Saldarriaga Cano
+             * fecha : Agosto de 2019
+             */
+            
+
+            //Titulo de la aplicación en consola.
+            Console.Title = "PRIMER PROGRAMA DE CONSOLA";
+            
+            //fondo de consola
+            Console.BackgroundColor = ConsoleColor.Cyan;
+            // color de caracteres
+            Console.ForegroundColor = ConsoleColor.White;
+            // limpiamos pantalla
+            Console.Clear();
+
+            Console.WriteLine("*********************************************************");
+            Console.WriteLine("*************  ejemplo de manejo de programa ************");
+            Console.WriteLine("*********************************************************");
+
+            // Mostramos un mensaje
+            Console.WriteLine("CUAL ES TU NOMBRE?");
+            String strNombre = Console.ReadLine();
+
+            Console.WriteLine("TU NOMBRE ES: " + strNombre);
+            Console.ReadKey();
+
+
+            // TIPOS DE VARIABLE ENTERAS
+            int valor = new int();
+            System.Int32 Valor1 = 22;
+            Int32 valor2 = new Int32();
+            
+
+            byte bEdad = 20;
+            sbyte edad2 = 33;
+            short edad3 = 32767;
+
+            int intedad = 150;
+            long loncodigo = 1234567891234567899;
+
+            // VARIABLES REALES
+            float Valorfloat = 12.232324324f;
+            double SueldoHora = 35000.689d;
+            Decimal dcValor = 32435.74568465546546458765546546456945455454654645654664654645654654869485m;
+            
+            // ---------cadenas -------------
+            char Sexo = 'M';
+            string Nombre = "javier saldarriaga";
+            string nombre2 = "";
+            string nombre3 = string.Empty;
+
+            bool EsCasado = true;
+            
+            //-----------otros -----------
+            const double PI = 3.14159;
+            DateTime fechaNac = DateTime.Now;
+            DateTime Fecha2 = DateTime.Parse("01/01/2020");
+
+            var DTO = "CUALQUIER COSA";
+
+            //------------ CONVERSIÓN IMPLICITA ------------
+            intedad= bEdad ;
+            loncodigo = intedad;
+            // ----------- explicita  --------------
+            intedad = (int)loncodigo;
+            Valorfloat = intedad;
+            intedad = (int)Valorfloat;
+
+
+            // ---sentencias explicitas Parse y Convert ----
+            Console.WriteLine("entre Nombre");
+            Nombre = Console.ReadLine();  // CAPTURA TEXTO
+
+            Console.WriteLine("entre edad");
+            // intedad = Console.ReadLine();
+
+            int edad = int.Parse(Console.ReadLine()); // parse convierte de texto a otro
+
+            Console.WriteLine("entre Sexo");
+            Sexo = Convert.ToChar(Console.ReadLine());// convierte de cualquier tipo a oto tipo
+           
+            Console.WriteLine("entre Sueldo");
+            //  recibe  decimal con  coma
+            SueldoHora = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Te llamas: " + Nombre + " tienes : " + edad + " Recibes un sueldo de:" +  SueldoHora);
+            Console.ReadKey();
+            Console.WriteLine("Te llamas: {0}  tienes : {1}  Recibes un sueldo de: {2} ", Nombre, edad, SueldoHora);
+            Console.ReadKey();
+            Console.WriteLine($"Te llamas: {Nombre}  tienes : {edad}  Recibes un sueldo de: { SueldoHora} ");
+            Console.ReadKey();
+
+
+
+
+            // realizamos los calculos
+            int a = 5, b = 4, c = 1, d = 1;
+            double x = 0;
+
+            x = (double)(a + b) / (double)(c + d);
+
+            // mostramos los resultados
+            Console.WriteLine($"RESULTADO: {x} ");
+            Console.ReadKey();
+        }
+    }
+}

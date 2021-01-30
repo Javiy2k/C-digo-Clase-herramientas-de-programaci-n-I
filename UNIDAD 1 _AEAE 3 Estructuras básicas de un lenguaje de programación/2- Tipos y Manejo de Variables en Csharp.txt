@@ -1,0 +1,202 @@
+ // ****************************************************
+            // ******  manejo de funcionalidades  en consola ******
+            // fecha creación:24082020
+            // ****************************************************
+
+
+            // --- colocamos título a la pantalla de la consola
+            Console.Title = "PROGRAMA EJEMPLO CONSOLA";
+
+            // colocamos el fondo de la pantalla
+            Console.BackgroundColor = ConsoleColor.Cyan;
+
+            // cambiamos color a la letra
+            Console.ForegroundColor = ConsoleColor.DarkBlue;
+
+            Console.Clear();
+
+            Console.WriteLine("****************************************************");
+            Console.WriteLine("**************PRUEBAS MANEJO CONSOLA****************");
+            Console.WriteLine("****************************************************\n");
+
+            //Console.Write("ENTRE SU NOMBRE: ");
+            //String nombre_Empleado = Console.ReadLine();
+
+            //Console.Write("SU NOMBRE ES: " + nombre_Empleado);
+
+            //Console.ReadKey();
+
+            // definimos tipos de definición de variables
+
+
+            //   ***********MANEJO VARIABLES ENTERAS *************
+            //Int32 edad_empleado1 = new int();
+            // int valor1 = 23,valor2 = 33,Iva = 19,contador = 0;
+
+
+            // byte edad = 34;
+            // short numeroEmpleados = 25000;
+            // int TelefonoEmpleado = 27987655;
+            // long nroCelular = 5988888798896588872;
+
+            //// numeroEmpleados = edad;// conversion implicita
+            // //edad = (byte)numeroEmpleados; // conversion explicita
+            // //TelefonoEmpleado = (int)nroCelular;
+
+
+            // //TelefonoEmpleado = edad;
+            // //nroCelular = TelefonoEmpleado;
+
+            // // ***********  MANEJO VARIABLES DECIMALES *************
+            // float fValor = 5.89999999999999999f;
+            // double dValor = 2334353453445.478765464564553464363463854645646456456475858696985855;
+            // decimal deciValor = 2334.334534534534454787654764576456586346534658764564553464363463854645646456456475858696985855m;
+
+            //   fValor= TelefonoEmpleado;
+
+
+            // // bool esCasado = true;
+
+            // // // ***********  MANEJO VARIABLES cadenas *************
+            // char Sexo = 'F';
+            // string nombre = "juan camilo";
+
+            //  string numero = "123,23456";
+
+            // //TelefonoEmpleado = int.Parse(numero);  // permite convertir de texto a numero
+            // //nroCelular = long.Parse(numero);
+
+            // dValor = double.Parse(numero); // conversiones explicita
+
+            // TelefonoEmpleado = Convert.ToInt32(numero); // conversiones explicita
+
+
+
+            // string direccion = String.Empty;// vacio
+
+            // const double PI = 3.141632567845;
+
+            // var valorx = 123.3435;
+
+            // // //*****************  aplicando las conversiones ************
+            // // // conversiones implicitas de menor a mayor
+            //  int valor1 = 23, valor2 = 33, Iva = 19, contador = 0;
+
+
+            ////  ****** definir variables *****
+            //string strnombre = "", strMensaje="";
+            //byte bEdad = 0;
+            //int intTel = 0;
+            //double dSueldo = 0;
+            //char Sexo = ' ';
+
+            ////  ****** captura o asignar valores
+            //Console.WriteLine("Entre su nombre");
+            //strnombre = Console.ReadLine();
+
+            ////Console.WriteLine("Entre su sexo");
+            ////Sexo = char.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Entre su edad");
+            //bEdad = byte.Parse(Console.ReadLine());
+
+            //Console.WriteLine("Entre Teléfono");
+            //intTel = Convert.ToInt32(Console.ReadLine());
+
+            ////Console.WriteLine("Entre Sueldo");
+            ////dSueldo = double.Parse(Console.ReadLine());
+
+
+            ////  ******  operaciones -calculos
+
+            //// ******* presentar resultados 
+            //Console.WriteLine("Su nombre es : " + strnombre + " Tu edad es: " + bEdad + " Telefono: " + intTel);
+
+            //Console.WriteLine("Su nombre es :  {0}  Tu edad es:  {1}   Telefono:  {2}", strnombre, bEdad, intTel);
+
+            //strMensaje = $"Su nombre es :  {strnombre}  Tu edad es:  {bEdad}   Telefono:  {intTel}";
+
+            //Console.WriteLine(strMensaje);
+
+
+            //*******************************************************************
+            //********************  PROGRAMA  SERIALIZACIÓN   *******************
+            //*******************************************************************
+            //double A = 5, B = 4, C = 1, D = 1;
+            //double x = 0;
+
+            //x = (A + B )/ (C + D);
+            ////x = (double)(A + B) / (C + D);
+            ////x = Convert.ToDouble((A + B)) / (C + D);
+            //// // SI  TODOS SON DOUBLE NO HAY PROBLEMAS DE CONVERSIÓN
+            //Console.WriteLine("El valor de  x es: " + x);
+
+            //Console.ReadKey();
+
+
+
+            // //*******************************************************************
+            // //*** CALCULO DEL AREA Y PERÍMETRO DEL TRIANGULO   ******************
+            ////*******************************************************************
+
+            // // ********** definimos variables  *********
+            // double base1=0 , altura=0, area=0 , hipotenusa=0, perimetro=0;
+
+            // // ********* captura o asignación de datos
+            // Console.WriteLine("Entra valor de la base");
+            // base1 = double.Parse(Console.ReadLine());
+
+            // Console.WriteLine("Entra valor de la altura");
+            // altura = double.Parse(Console.ReadLine());
+
+            // // ********* realizamos el proceso, operaciones
+
+            // area = (base1 * altura) / 2;
+
+            // hipotenusa = Math.Sqrt(base1*base1 + altura* altura);
+
+            // perimetro = base1 + altura + hipotenusa;
+
+            // // ********* mostrar resultados ***********
+            // Console.WriteLine($"El triangulo con base {base1} y altura {altura} tiene un area de: {area}");
+            // Console.WriteLine($"E perimetro de la figura es: {perimetro}");
+
+
+            // Console.ReadKey();
+
+
+
+
+            // //*******************************************************************
+            // //*** CALCULO DEL AREA Y PERÍMETRO DEL compuesto   ******************
+            ////*******************************************************************
+
+
+            //// ********** DEFINIMOS VARIABLES *****
+            double base1 = 0, altura = 0, areaTotal = 0, areaT=0, AreaRec=0, perimetroTotal = 0, hipotenusa = 0;
+
+            //// ********** ASIGNAMOS CAPTURAMOS VALORES *****
+            Console.WriteLine("Entre valor de la base");
+            base1 = double.Parse(Console.ReadLine());
+
+            Console.WriteLine("Entre valor de la Altura");
+            altura = double.Parse(Console.ReadLine());
+
+            ////// ********** REALIZAOS CALCULOS *****
+            areaT = (base1 * altura) / 2;
+
+            AreaRec = altura * (2 * base1);
+
+            areaTotal = areaT + AreaRec;
+
+            hipotenusa = Math.Sqrt(base1*base1 + altura* altura);
+
+
+            perimetroTotal = base1 + ( 2 * base1) + altura +( 2 * base1) + hipotenusa;
+
+            //// ********** mostrar resultados *****
+
+            Console.WriteLine($"El área total es: {areaTotal}");
+            Console.WriteLine($"El perimetro total es: {perimetroTotal}");
+
+            Console.ReadKey();
